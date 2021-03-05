@@ -10,13 +10,13 @@ requeue if that is their desire
 # Installation
 
 ## To install:
-1. Clone this and the server repository: https://github.com/IanBruns/petful-server
+1. Clone this and the server repository: https://github.com/enloe92/petful-server
 2. npm install for the dependencies
 3. npm start
 
 # Live Application
 
-https://petful-client-template-six.vercel.app/
+https://petful-client-kevin.vercel.app/
 
 # Screenshot
 
