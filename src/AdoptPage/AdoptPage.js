@@ -12,7 +12,8 @@ export default class AdoptPage extends Component {
         userName: '',
         inLine: false,
         atFront: false,
-        waiting: false
+        waiting: false,
+        adoptionMessage: false
     }
 
     componentDidMount() {
@@ -57,6 +58,7 @@ export default class AdoptPage extends Component {
                                     userName: '',
                                     inLine: false,
                                     atFront: false,
+                                    adoptionMessage: true
                                 });
                             })
                             .catch((error) => this.setState({ error }));
@@ -73,6 +75,7 @@ export default class AdoptPage extends Component {
                     inLine: true,
                     atFront: false,
                     waiting: true,
+                    adoptionMessage: false
                 })
             })
 
@@ -162,6 +165,12 @@ export default class AdoptPage extends Component {
                     (<div>
                         <h3>Now it's time to adopt!</h3>
                     </div>)}
+                
+                    {this.state.adoptionMessage !== false && (
+            <h2 style={{ color: 'green'}}>
+              Congratulations, your adoption was accepted!
+            </h2>
+          )}
 
                 {this.state.inLine === false && (
                     <form className="adopt-form" onSubmit={e => this.handleFormSubmit(e)}>

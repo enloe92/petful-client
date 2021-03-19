@@ -1,6 +1,7 @@
 import React from 'react';
 import { Link } from 'react-router-dom';
 import './LandingPage.css'
+import screenshot from '../images/screenshot.png'
 
 export default function LandingPage(props) {
     return (
@@ -16,6 +17,7 @@ export default function LandingPage(props) {
                     <li>If interested, join the queue</li>
                     <li>When it is your turn, you will be able to select the next pet</li>
                 </ol>
+                <img src = {screenshot} alt="Screenshot of the process" height="500" class="center"/>
             </div>
             <div className='centered'>
                 <h3>Interested?</h3>
